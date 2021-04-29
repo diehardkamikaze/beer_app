@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css'
+import Catalog from './catalog.js'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+fetch('https://api.punkapi.com/v2/beers')
+.then((result) => result.json())
+.then((responce) => {
+  console.log(responce);
+  ReactDOM.render(
+    <Catalog items={responce}></Catalog>,
+    document.getElementById('root')
+  );
+});
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
