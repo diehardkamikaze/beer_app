@@ -1,0 +1,67 @@
+.regModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 10, 10, 0.8);
+  z-index: 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regModal form {
+  position: relative;
+  width: 40vw;
+  height: 50vh;
+  border: 3px solid black;
+  border-radius: 40px;
+  background-color: white;
+
+  padding: 40px;
+}
+
+.regModal .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  color: white;
+  background-color: black;
+}
+
+.regModal .close:focus {
+  outline: none;
+}
+
+.regModal input {
+  margin-top: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.regModal label {
+  font-size: 20px;
+}
+
+.regModal .signup {
+  background-color: black;
+  border: 2px solid grey;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.regModal .error {
+  color: red;
+  font-size: 12px;
+}
+
+.regModal .error::before {
+  content: '* ';
+}
