@@ -1,5 +1,5 @@
 import React from 'react';
-import Loader from './utils/Loader';
+import Loader from './interface/Loader';
 import Background from './interface/Background';
 import Catalogue from './interface/Catalogue';
 import RegistrationModal from './interface/Registration';
@@ -32,10 +32,10 @@ class App extends React.Component {
     const { isLoaded, modal } = this.state;
     if (isLoaded) {
       return (
-        <div>
+        <div className="app">
           <Background images={this.images} />
           <Catalogue modal={this.openModal} beerData={this.beerData} />
-          { modal ? <RegistrationModal modal={this.closeModal} /> : '' }
+          { modal ? <RegistrationModal closeModal={this.closeModal} /> : '' }
         </div>
       );
     }

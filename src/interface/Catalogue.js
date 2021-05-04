@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import Controls from './catalogue/Controls';
-import ItemsList from './catalogue/ItemsList';
-import Pagination from './catalogue/Pagination';
+import Controls from './Catalogue/Controls';
+import ItemsList from './Catalogue/ItemsList';
+import Pagination from './Catalogue/Pagination';
 import { ON_PAGE } from '../constants';
 
 class Catalogue extends React.Component {

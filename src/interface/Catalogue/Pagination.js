@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/pagination.css';
 
 class Pagination extends React.Component {
   constructor(props) {

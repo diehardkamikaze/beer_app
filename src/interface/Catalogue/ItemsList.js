@@ -2,10 +2,10 @@
 import React from 'react';
 import MASK_IMG from '../../img/mask.png';
 import { ON_PAGE } from '../../constants';
+import '../../styles/itemslist.css';
 
 class ItemsList extends React.Component {
   render() {
-    console.log(this.props);
     const items = new Array(ON_PAGE);
     const { beers, offset } = this.props;
     for (let i = 0; i < ON_PAGE; i += 1) {

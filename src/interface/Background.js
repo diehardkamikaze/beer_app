@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import '../styles/background.css';
 import { IMAGES_COUNT } from '../constants';
 
 class Background extends React.Component {

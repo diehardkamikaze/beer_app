@@ -2,6 +2,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { SORT_PARAMS } from '../../constants';
+import '../../styles/controls.css';
 
 class Controls extends React.Component {
   render() {
